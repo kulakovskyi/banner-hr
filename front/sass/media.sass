@@ -314,11 +314,22 @@
 
 @media screen and (max-width: 1024px) and (min-height: 1000px)
   .banner
-    padding: 300px 25px 0 25px
+    padding: 212px 25px 0 25px
     &__image
       height: 345px
       .man
         max-width: 405px
+    &__row
+      flex-direction: column
+    &__item
+      &:nth-child(1)
+        order: 1
+      &:nth-child(3)
+        order: 2
+      &:nth-child(2)
+        order: 3
+
+
 
 
 @media screen and (max-width: 1023px)
